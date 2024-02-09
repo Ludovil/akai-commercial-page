@@ -1,4 +1,4 @@
-function Button() {
-  return <button className="dealer-btn">call to action</button>;
+function Button({ text }) {
+  return <button className="dealer-btn">{text}</button>;
 }
 export default Button;

@@ -2,8 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Features from "./pages/Features";
-import Signup from "./pages/Signup";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
-          <Route path="/signup" element={<Signup />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signin" element={<Signin />} />
         </Routes>
       </BrowserRouter>
     </div>

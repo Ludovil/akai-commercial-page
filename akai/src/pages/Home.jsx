@@ -11,7 +11,7 @@ function Home() {
     >
       <div className="border flex flex-col grow justify-center items-center ">
         <img src={Mpclive} alt="" className="h-14 w-auto" />
-        <Button />
+        <Button text="call to action" />
       </div>
     </section>
   );
