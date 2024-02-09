@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .dealer-btn {
+    margin-top: 25px;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.26);
+    border: 1px solid #dfdfdf;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 28px;
+    max-width: 100%;
+    padding: 14px 22px;
+    text-decoration: none;
+    transition: all 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .dealer-btn:active,
+  .dealer-btn:hover {
+    outline: 0;
+  }
+
+  .dealer-btn:hover {
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.19);
+    color: black;
+  }
+
+  @media (min-width: 768px) {
+    .dealer-btn {
+      font-size: 20px;
+      min-width: 200px;
+      padding: 14px 16px;
+    }
+  }
+}
